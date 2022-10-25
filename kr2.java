@@ -5,17 +5,15 @@ public class kr2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n;
-        int k;
+        n = scanner.nextInt();
         boolean vse1 = true;
 
-        while (true) {
+        while (n!=0) {
             n = scanner.nextInt();
             if (sod(n) == false) {
                 vse1 = false;
             }
-            if (n == 0) {
-                break;
-            }
+            n = scanner.nextInt();
         }
         
         if (vse1 == false) {
@@ -32,8 +30,8 @@ public class kr2 {
         while(k != 0) {
                 if ( (k%10 == 5) || (k%10 == 3) ) {
                     vsef = true;
-                    k = k / 10;
                 }
+            k = k / 10;
         }
         return vsef;
 
